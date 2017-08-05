@@ -1,0 +1,12 @@
+{% extends "job_base.html" %}
+
+{% block content %}
+<div class="container-fluid registration-bg-1">
+  <h2>Registration</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+</div>
+{% endblock %}
